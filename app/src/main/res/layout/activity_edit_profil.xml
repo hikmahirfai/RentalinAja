@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.EditProfil"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_rental"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/cera_pro"
+        android:paddingTop="10dp"
+        android:text="Edit Profil"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_form_border"
+        android:paddingTop="10dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/input_nama"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_form"
+            android:fontFamily="@font/cera_light"
+            android:hint="Nama"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_margin="1dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_form_border"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/input_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/ic_form"
+            android:fontFamily="@font/cera_light"
+            android:hint="Alamat"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_form_border"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <EditText
+            android:id="@+id/input_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/ic_form"
+            android:fontFamily="@font/cera_light"
+            android:hint="No. Handphone"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ic_tombol"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/cera_pro"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
